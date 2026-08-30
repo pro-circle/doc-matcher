@@ -5,7 +5,7 @@ import { ActionBadge } from "./ActionBadge";
 interface ChangeTableProps {
   changes: ChangeItem[];
   onSelect: (change: ChangeItem) => void;
-  selectedId?: string | null;
+  selectedId?: string | null | undefined;
 }
 
 export function ChangeTable({ changes, onSelect, selectedId }: ChangeTableProps) {
