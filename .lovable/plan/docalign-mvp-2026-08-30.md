@@ -102,6 +102,7 @@ Both -> Alignment Engine (deterministic: structure, typography, layout, formatti
 - Never fabricate content. Missing concepts produce "Add a requirement covering X", not an invented paragraph.
 - Every change string is an imperative action, never a label like "semantic mismatch".
 - Flag meaning-changing word swaps (SHALL → MAY, must → should) as high severity.
+- Examples includes project reports, summaries, research papers... All structures documents.
 
 **Groq key rotation** — `GROQ_API_KEY_1..4` in `.env`. A pool assigns one key per pipeline task (master analysis, child analysis, semantic compare, change generation) and round-robins on 429/5xx with bounded backoff. Model: `openai/gpt-oss-120b`.
 
